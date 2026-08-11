@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace ConceitoInterface.Models
 {
     // ==================================================
@@ -20,19 +22,23 @@ namespace ConceitoInterface.Models
 
 
         // Informações básicas do usuário.
-        public string Nome { get; set; }
+        [Required]
+        public string Nome { get; set; } = string.Empty;
 
-        public string Sobrenome { get; set; }
+        [Required]
+        public string Sobrenome { get; set; } = string.Empty;
 
-        public string Email { get; set; }
+        [Required]
+        public string Email { get; set; } = string.Empty;
 
 
         // A senha é privada para impedir que outras classes
         // acessem seu valor diretamente.
         //
         // O acesso é controlado através do método SetSenha().
-
-        private string Senha { get; set; }
+        [Required]
+        [MinLength(8)]
+        private string Senha { get; set; } = string.Empty;
 
 
         // Define ou altera a senha do usuário.

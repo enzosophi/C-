@@ -1,6 +1,6 @@
 ﻿using ConceitoInterface.Services;
 using ConceitoInterface.Models;
-
+using System.Net.Mail;
 // Instanciamos o Service responsável pelas operações de usuário.
 // O Service implementa a interface IUsuarioService.
 var usuarioService = new UsuarioService();
@@ -46,6 +46,20 @@ do
 
             Console.Write("Digite o email do usuário: ");
             var email = Console.ReadLine();
+            try
+            {
+                var endrecoEmail = new MailAddress(email);
+                if(endrecoEmail.Address != email)
+                {
+                    Console.WriteLine("Email inválido");
+                    break;
+                }
+           }
+            catch
+            {
+                Console.WriteLine("Email inválido");
+                break;
+            }
 
             Console.Write("Digite a senha do usuário: ");
             var senha = Console.ReadLine();

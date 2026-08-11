@@ -1,0 +1,15 @@
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\bin\Debug\net10.0\Genericos.exe
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\bin\Debug\net10.0\Genericos.deps.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\bin\Debug\net10.0\Genericos.runtimeconfig.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\bin\Debug\net10.0\Genericos.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\bin\Debug\net10.0\Genericos.pdb
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\obj\Debug\net10.0\Genericos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\obj\Debug\net10.0\Genericos.AssemblyInfoInputs.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\obj\Debug\net10.0\Genericos.AssemblyInfo.cs
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\obj\Debug\net10.0\Genericos.csproj.CoreCompileInputs.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\obj\Debug\net10.0\Genericos.sourcelink.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\obj\Debug\net10.0\Genericos.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\obj\Debug\net10.0\refint\Genericos.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\obj\Debug\net10.0\Genericos.pdb
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\obj\Debug\net10.0\Genericos.genruntimeconfig.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\04-Genericos\Genericos\obj\Debug\net10.0\ref\Genericos.dll

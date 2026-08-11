@@ -1,0 +1,14 @@
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\bin\Debug\net10.0\ConceitoInterface.exe
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\bin\Debug\net10.0\ConceitoInterface.deps.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\bin\Debug\net10.0\ConceitoInterface.runtimeconfig.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\bin\Debug\net10.0\ConceitoInterface.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\bin\Debug\net10.0\ConceitoInterface.pdb
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ConceitoInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ConceitoInterface.AssemblyInfoInputs.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ConceitoInterface.AssemblyInfo.cs
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ConceitoInterface.csproj.CoreCompileInputs.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ConceitoInterface.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\refint\ConceitoInterface.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ConceitoInterface.pdb
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ConceitoInterface.genruntimeconfig.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ref\ConceitoInterface.dll

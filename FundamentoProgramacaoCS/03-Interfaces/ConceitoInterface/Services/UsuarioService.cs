@@ -1,165 +1,115 @@
+
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using ConceitoInterface.Models;
+
 
 namespace ConceitoInterface.Services
 {
-    // ==================================================
-    // SERVICE
-    // ==================================================
-    // UsuarioService implementa a interface IUsuarioService.
+    // A classe Usuario está implementando a interface IUsuarioService.
     //
-    // Isso significa que esta classe precisa implementar
-    // todos os métodos definidos no contrato da interface.
-    //
-    // Aqui ficam as operações que trabalham com os usuários,
-    // como cadastrar, atualizar, excluir e consultar.
-
+    // Ao utilizar ": IUsuarioService", a classe assume o compromisso
+    // de implementar todos os métodos definidos na interface.
     public class UsuarioService : IUsuarioService
     {
-        // ==================================================
-        // ARMAZENAMENTO
-        // ==================================================
-
-        // Lista utilizada para armazenar os usuários
-        // enquanto a aplicação estiver em execução.
-        //
-        // Neste exemplo não estamos utilizando um banco
-        // de dados. Por isso, os dados ficam armazenados
-        // apenas em memória.
-
         private List<Usuario> usuarios = new List<Usuario>();
-
-
-        // Controla o próximo ID que será atribuído
-        // automaticamente a um novo usuário.
 
         private int proximoId = 1;
 
-
-        // ==================================================
-        // CREATE
-        // ==================================================
-
-        // Cadastra um novo usuário.
+        // Método responsável por realizar o cadastro de um usuário.
         //
-        // O ID é gerado automaticamente antes de adicionar
-        // o usuário à lista.
-
+        // O parâmetro "usuario" recebe um objeto da classe Usuario
+        // que contém os dados que serão utilizados no cadastro.
         public void CadastrarUsuario(Usuario usuario)
         {
             usuario.Id = proximoId++;
-
-            usuarios.Add(usuario);
-
             Console.WriteLine("================================");
             Console.WriteLine("       CADASTRO DE USUÁRIO");
             Console.WriteLine("================================");
             Console.WriteLine($"Usuário {usuario.Nome} cadastrado com sucesso!");
-            Console.WriteLine($"ID: {usuario.Id}");
+            usuarios.Add(usuario);
+
         }
 
 
-        // ==================================================
-        // UPDATE
-        // ==================================================
 
-        // Atualiza os dados de um usuário existente.
+        // Método responsável por atualizar os dados de um usuário.
         //
-        // Primeiro procuramos o usuário através do ID.
-        // Se ele não existir, a operação é interrompida.
-
+        // Recebemos um objeto Usuario para identificar
+        // quais informações deverão ser atualizadas.
         public void AtualizarUsuario(Usuario usuario)
         {
-            // Find percorre a lista procurando um usuário
-            // que possua o mesmo ID informado.
-
             var usuarioExistente = usuarios.Find(u => u.Id == usuario.Id);
-
-            if (usuarioExistente == null)
+            if(usuarioExistente == null)
             {
-                Console.WriteLine("Usuário não encontrado.");
+                System.Console.WriteLine("Usuario Não encontrado");
                 return;
             }
-
-
-            // Atualizamos os dados do usuário encontrado.
-
             usuarioExistente.Nome = usuario.Nome;
-            usuarioExistente.Sobrenome = usuario.Sobrenome;
+            usuarioExistente.Email = usuario.Sobrenome;
             usuarioExistente.Email = usuario.Email;
-
 
             Console.WriteLine("================================");
             Console.WriteLine("       ATUALIZAÇÃO DE USUÁRIO");
             Console.WriteLine("================================");
             Console.WriteLine($"Usuário {usuarioExistente.Nome} atualizado com sucesso!");
+            
         }
 
 
-        // ==================================================
-        // DELETE
-        // ==================================================
-
-        // Exclui um usuário utilizando seu ID.
-
+        // Método responsável por excluir um usuário.
+        //
+        // O ID é utilizado para identificar qual usuário
+        // deverá ser excluído.
         public void ExcluirUsuario(int id)
         {
-            // Procuramos o usuário que possui o ID informado.
+            var usuario = usuarios.Find(u => u.Id ==id);
 
-            var usuario = usuarios.Find(u => u.Id == id);
-
-            if (usuario == null)
+            if(usuario == null)
             {
-                Console.WriteLine($"Usuário de ID {id} não encontrado.");
+                Console.WriteLine($"Usuario de Id {id} não encontrado");
                 return;
             }
-
-
-            // Remove o usuário encontrado da lista.
-
-            usuarios.Remove(usuario);
-
             Console.WriteLine("================================");
             Console.WriteLine("       EXCLUSÃO DE USUÁRIO");
             Console.WriteLine("================================");
+            usuarios.Remove(usuario);
             Console.WriteLine($"Usuário {id} excluído com sucesso!");
+            
         }
 
 
-        // ==================================================
-        // READ - POR ID
-        // ==================================================
-
-        // Busca um usuário específico através do seu ID.
-
+        // Método responsável por buscar um usuário através do seu ID.
+        //
+        // O retorno é um objeto Usuario.
+        //
+        // Neste exemplo, ainda não estamos buscando os dados em
+        // um banco de dados. Por isso, estamos apenas retornando
+        // uma nova instância da classe Usuario.
         public Usuario ObterUsuarioPorId(int id)
         {
             Console.WriteLine("================================");
             Console.WriteLine("       OBTENDO USUÁRIO POR ID");
             Console.WriteLine("================================");
 
-            // FirstOrDefault retorna o primeiro usuário
-            // encontrado ou null caso nenhum seja encontrado.
-
             return usuarios.FirstOrDefault(u => u.Id == id);
         }
 
 
-        // ==================================================
-        // READ - TODOS
-        // ==================================================
-
-        // Retorna todos os usuários cadastrados.
-
+        // Método responsável por obter todos os usuários.
+        //
+        // O retorno é uma lista contendo objetos do tipo Usuario.
+        //
+        // Neste exemplo, a lista ainda está vazia porque não
+        // estamos utilizando um banco de dados ou outra fonte
+        // de armazenamento.
         public List<Usuario> ObterTodosUsuarios()
         {
             Console.WriteLine("================================");
             Console.WriteLine("       OBTENDO TODOS OS USUÁRIOS");
             Console.WriteLine("================================");
-
             return usuarios;
         }
     }
 }
+

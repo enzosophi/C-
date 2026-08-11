@@ -12,3 +12,4 @@ C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInter
 C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ConceitoInterface.pdb
 C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ConceitoInterface.genruntimeconfig.cache
 C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ref\ConceitoInterface.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\03-Interfaces\ConceitoInterface\obj\Debug\net10.0\ConceitoInterface.sourcelink.json

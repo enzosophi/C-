@@ -50,5 +50,16 @@ namespace ConceitoInterface.Models
         {
             Senha = senha;
         }
+
+        static bool CampoObrigatorio(string? valor, string nomeCampo)
+        {
+            if (string.IsNullOrWhiteSpace(valor))
+            {
+                Console.WriteLine($"{nomeCampo} não pode ser vazio.");
+                return false;
+            }
+
+            return true;
+        }
     }
 }

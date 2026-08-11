@@ -1,6 +1,7 @@
 ﻿using ConceitoInterface.Services;
 using ConceitoInterface.Models;
 using System.Net.Mail;
+
 // Instanciamos o Service responsável pelas operações de usuário.
 // O Service implementa a interface IUsuarioService.
 var usuarioService = new UsuarioService();
@@ -8,6 +9,18 @@ var usuarioService = new UsuarioService();
 Console.Clear();
 
 int escolha = 0;
+
+// Método responsável por validar campos obrigatórios.
+static bool CampoObrigatorio(string? valor, string nomeCampo)
+{
+    if (string.IsNullOrWhiteSpace(valor))
+    {
+        Console.WriteLine($"{nomeCampo} não pode ser vazio.");
+        return false;
+    }
+
+    return true;
+}
 
 // O loop mantém o menu executando até a opção 6 ser escolhida.
 do
@@ -46,25 +59,37 @@ do
 
             Console.Write("Digite o email do usuário: ");
             var email = Console.ReadLine();
-            try
-            {
-                var endrecoEmail = new MailAddress(email);
-                if(endrecoEmail.Address != email)
-                {
-                    Console.WriteLine("Email inválido");
-                    break;
-                }
-           }
-            catch
-            {
-                Console.WriteLine("Email inválido");
-                break;
-            }
 
             Console.Write("Digite a senha do usuário: ");
             var senha = Console.ReadLine();
 
-            // Instanciamos um novo objeto Usuario.
+            // Valida os campos obrigatórios.
+            if (!CampoObrigatorio(nome, "Nome") ||
+                !CampoObrigatorio(sobrenome, "Sobrenome") ||
+                !CampoObrigatorio(email, "Email") ||
+                !CampoObrigatorio(senha, "Senha"))
+            {
+                break;
+            }
+
+            // Valida o formato do email.
+            try
+            {
+                var enderecoEmail = new MailAddress(email);
+
+                if (enderecoEmail.Address != email)
+                {
+                    Console.WriteLine("Email inválido.");
+                    break;
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Email inválido.");
+                break;
+            }
+
+            // Cria uma nova instância de Usuario.
             var novoUsuario = new Usuario
             {
                 Nome = nome,
@@ -72,11 +97,10 @@ do
                 Email = email
             };
 
-            // Senha é privada, por isso utilizamos um método
-            // para realizar sua alteração.
+            // A senha é privada, por isso utilizamos o método SetSenha().
             novoUsuario.SetSenha(senha);
 
-            // O Service realiza o cadastro do usuário.
+            // Envia o usuário para o Service realizar o cadastro.
             usuarioService.CadastrarUsuario(novoUsuario);
 
             break;
@@ -107,7 +131,7 @@ do
             Console.Write("Digite a nova senha do usuário: ");
             var senhaAtualizada = Console.ReadLine();
 
-            // Criamos um objeto contendo os novos dados.
+            // Cria um objeto contendo os novos dados.
             var usuarioAtualizado = new Usuario
             {
                 Id = idAtualizar,
@@ -155,7 +179,7 @@ do
 
             if (int.TryParse(Console.ReadLine(), out int idObter))
             {
-                // O Service realiza a busca pelo ID.
+                // Busca o usuário através do ID informado.
                 var usuarioObtido = usuarioService.ObterUsuarioPorId(idObter);
 
                 if (usuarioObtido != null)
@@ -190,6 +214,7 @@ do
 
             if (todosUsuarios.Count > 0)
             {
+                // Percorre todos os usuários da lista.
                 foreach (var usuario in todosUsuarios)
                 {
                     Console.WriteLine(
@@ -213,6 +238,7 @@ do
         // ==========================================
         default:
 
+            // A opção 6 encerra o loop.
             if (escolha != 6)
             {
                 Console.WriteLine(

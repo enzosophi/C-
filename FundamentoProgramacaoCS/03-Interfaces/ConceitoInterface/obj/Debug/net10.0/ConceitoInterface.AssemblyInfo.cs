@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConceitoInterface")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82b0c51469bcd874ad7e10290b8ea3ef5d74200e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConceitoInterface")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConceitoInterface")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

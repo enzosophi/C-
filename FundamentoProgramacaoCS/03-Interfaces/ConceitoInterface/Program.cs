@@ -1,14 +1,15 @@
 ﻿using ConceitoInterface.Services;
 using ConceitoInterface.Models;
 
-// Instancia o Service responsável pelas operações de CRUD dos usuários.
+// Instanciamos o Service responsável pelas operações de usuário.
+// O Service implementa a interface IUsuarioService.
 var usuarioService = new UsuarioService();
 
 Console.Clear();
 
 int escolha = 0;
 
-// Mantém o menu sendo executado até o usuário escolher a opção 6.
+// O loop mantém o menu executando até a opção 6 ser escolhida.
 do
 {
     Console.WriteLine("================================");
@@ -23,19 +24,17 @@ do
     Console.WriteLine("================================");
     Console.Write("Escolha uma opção: ");
 
-    // Tenta converter a entrada do usuário para um número inteiro.
-    // Caso não seja possível, o menu é reiniciado.
+    // Tenta converter o valor digitado para inteiro.
     if (!int.TryParse(Console.ReadLine(), out escolha))
     {
-        Console.WriteLine("Opção inválida! Por favor, digite um número.");
+        Console.WriteLine("Opção inválida! Digite um número.");
         continue;
     }
 
-    // Define qual operação será executada de acordo com a opção escolhida.
     switch (escolha)
     {
         // ==========================================
-        // CADASTRAR USUÁRIO
+        // CREATE - Cadastrar usuário
         // ==========================================
         case 1:
 
@@ -51,7 +50,7 @@ do
             Console.Write("Digite a senha do usuário: ");
             var senha = Console.ReadLine();
 
-            // Cria uma nova instância da classe Usuario.
+            // Instanciamos um novo objeto Usuario.
             var novoUsuario = new Usuario
             {
                 Nome = nome,
@@ -59,26 +58,26 @@ do
                 Email = email
             };
 
-            // Como a senha é privada, utilizamos o método SetSenha().
+            // Senha é privada, por isso utilizamos um método
+            // para realizar sua alteração.
             novoUsuario.SetSenha(senha);
 
-            // Envia o usuário para o Service realizar o cadastro.
+            // O Service realiza o cadastro do usuário.
             usuarioService.CadastrarUsuario(novoUsuario);
 
             break;
 
 
         // ==========================================
-        // ATUALIZAR USUÁRIO
+        // UPDATE - Atualizar usuário
         // ==========================================
         case 2:
 
             Console.Write("Digite o ID do usuário a ser atualizado: ");
 
-            // Verifica se o ID informado é um número válido.
             if (!int.TryParse(Console.ReadLine(), out int idAtualizar))
             {
-                Console.WriteLine("ID inválido! Por favor, digite um número.");
+                Console.WriteLine("ID inválido! Digite um número.");
                 break;
             }
 
@@ -94,8 +93,7 @@ do
             Console.Write("Digite a nova senha do usuário: ");
             var senhaAtualizada = Console.ReadLine();
 
-            // Cria um objeto contendo os novos dados do usuário.
-            // O ID é mantido para que o Service saiba qual usuário atualizar.
+            // Criamos um objeto contendo os novos dados.
             var usuarioAtualizado = new Usuario
             {
                 Id = idAtualizar,
@@ -106,48 +104,46 @@ do
 
             usuarioAtualizado.SetSenha(senhaAtualizada);
 
-            // Envia os dados para o Service localizar
-            // e atualizar o usuário existente na lista.
+            // O Service localiza o usuário pelo ID
+            // e realiza a atualização.
             usuarioService.AtualizarUsuario(usuarioAtualizado);
 
             break;
 
 
         // ==========================================
-        // EXCLUIR USUÁRIO
+        // DELETE - Excluir usuário
         // ==========================================
         case 3:
 
             Console.Write("Digite o ID do usuário a ser excluído: ");
 
-            // Verifica se o ID informado é válido.
             if (int.TryParse(Console.ReadLine(), out int idExcluir))
             {
-                // O Service será responsável por verificar
-                // se o usuário existe e realizar a exclusão.
+                // O Service verifica se o usuário existe
+                // e realiza a exclusão.
                 usuarioService.ExcluirUsuario(idExcluir);
             }
             else
             {
-                Console.WriteLine("ID inválido! Por favor, digite um número.");
+                Console.WriteLine("ID inválido! Digite um número.");
             }
 
             break;
 
 
         // ==========================================
-        // OBTER USUÁRIO POR ID
+        // READ - Obter usuário por ID
         // ==========================================
         case 4:
 
-            Console.Write("Digite o ID do usuário a ser obtido: ");
+            Console.Write("Digite o ID do usuário: ");
 
             if (int.TryParse(Console.ReadLine(), out int idObter))
             {
-                // Busca o usuário através do ID informado.
+                // O Service realiza a busca pelo ID.
                 var usuarioObtido = usuarioService.ObterUsuarioPorId(idObter);
 
-                // Verifica se o usuário foi encontrado.
                 if (usuarioObtido != null)
                 {
                     Console.WriteLine(
@@ -164,24 +160,22 @@ do
             }
             else
             {
-                Console.WriteLine("ID inválido! Por favor, digite um número.");
+                Console.WriteLine("ID inválido! Digite um número.");
             }
 
             break;
 
 
         // ==========================================
-        // OBTER TODOS OS USUÁRIOS
+        // READ - Obter todos os usuários
         // ==========================================
         case 5:
 
-            // Obtém a lista de usuários armazenada no Service.
+            // O Service retorna todos os usuários cadastrados.
             var todosUsuarios = usuarioService.ObterTodosUsuarios();
 
-            // Verifica se existem usuários cadastrados.
             if (todosUsuarios.Count > 0)
             {
-                // Percorre todos os usuários da lista.
                 foreach (var usuario in todosUsuarios)
                 {
                     Console.WriteLine(
@@ -201,16 +195,14 @@ do
 
 
         // ==========================================
-        // OPÇÃO INVÁLIDA
+        // SAIR / OPÇÃO INVÁLIDA
         // ==========================================
         default:
 
-            // A opção 6 não precisa de um case porque
-            // ela apenas encerra o loop.
             if (escolha != 6)
             {
                 Console.WriteLine(
-                    "Opção inválida! Por favor, escolha uma opção válida."
+                    "Opção inválida! Escolha uma opção de 1 a 6."
                 );
             }
 
@@ -218,4 +210,3 @@ do
     }
 
 } while (escolha != 6);
-

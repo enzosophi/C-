@@ -1,0 +1,15 @@
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\bin\Debug\net10.0\Linqs.exe
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\bin\Debug\net10.0\Linqs.deps.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\bin\Debug\net10.0\Linqs.runtimeconfig.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\bin\Debug\net10.0\Linqs.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\bin\Debug\net10.0\Linqs.pdb
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\obj\Debug\net10.0\Linqs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\obj\Debug\net10.0\Linqs.AssemblyInfoInputs.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\obj\Debug\net10.0\Linqs.AssemblyInfo.cs
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\obj\Debug\net10.0\Linqs.csproj.CoreCompileInputs.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\obj\Debug\net10.0\Linqs.sourcelink.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\obj\Debug\net10.0\Linqs.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\obj\Debug\net10.0\refint\Linqs.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\obj\Debug\net10.0\Linqs.pdb
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\obj\Debug\net10.0\Linqs.genruntimeconfig.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\05-LINQS\Linqs\obj\Debug\net10.0\ref\Linqs.dll

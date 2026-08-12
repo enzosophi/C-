@@ -40,21 +40,17 @@ A ideia aqui é focar nos **conceitos específicos do ecossistema C#/.NET**, sem
 
 ## 01 — C#
 
-Fundamentos necessários para desenvolver aplicações utilizando C#.
+Fundamentos necessários para desenvolver aplicações utilizando C#, organizados em subpastas por tópico.
 
-* [ ] Variáveis e recursos da linguagem
-* [X] Programação Orientada a Objetos
-* [X] Classes
-* [X] Encapsulamento
-* [X] Herança
-* [X] Polimorfismo
-* [X] Interfaces
-* [ ] Generics
-* [ ] LINQ
+* [ ] 01-Variaveis
+* [X] 02-POO *(Classes, Encapsulamento, Herança, Polimorfismo — projeto de cliente em `Program.cs`)*
+* [X] 03-Interfaces
+* [X] 04-Genericos
+* [ ] 05-LINQS
 * [ ] Exceptions
 * [ ] Async/Await
 
-📁 [`01-CSharp/`](./01-CSharp)
+📁 [`FundamentoProgramacaoCS/`](./FundamentoProgramacaoCS)
 
 ---
 

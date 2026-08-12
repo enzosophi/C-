@@ -1,0 +1,15 @@
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\obj\Debug\net10.0\POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\obj\Debug\net10.0\POO.AssemblyInfoInputs.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\obj\Debug\net10.0\POO.AssemblyInfo.cs
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\obj\Debug\net10.0\POO.csproj.CoreCompileInputs.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\obj\Debug\net10.0\POO.sourcelink.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\bin\Debug\net10.0\POO.exe
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\bin\Debug\net10.0\POO.deps.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\bin\Debug\net10.0\POO.runtimeconfig.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\bin\Debug\net10.0\POO.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\bin\Debug\net10.0\POO.pdb
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\obj\Debug\net10.0\POO.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\obj\Debug\net10.0\refint\POO.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\obj\Debug\net10.0\POO.pdb
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\obj\Debug\net10.0\POO.genruntimeconfig.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\02-POO\POO\obj\Debug\net10.0\ref\POO.dll

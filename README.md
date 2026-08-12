@@ -46,7 +46,7 @@ Fundamentos necessários para desenvolver aplicações utilizando C#, organizado
 * [X] 02-POO *(Classes, Encapsulamento, Herança, Polimorfismo — projeto de cliente em `Program.cs`)*
 * [X] 03-Interfaces
 * [X] 04-Genericos
-* [ ] 05-LINQS
+* [X] 05-LINQS
 * [ ] Exceptions
 * [ ] Async/Await
 

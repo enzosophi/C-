@@ -1,0 +1,327 @@
+# 🖥️ CLI — Command Line Interface
+
+O **CLI (Command Line Interface)**, ou **Interface de Linha de Comando**, é uma forma de interagir com o computador utilizando comandos diretamente pelo terminal, como **CMD, PowerShell ou Terminal**.
+
+No ecossistema **.NET**, o CLI é utilizado para criar, executar, compilar, testar e gerenciar projetos.
+
+---
+
+## 📌 O comando `dotnet`
+
+O `dotnet` é o principal comando utilizado para trabalhar com o .NET através do terminal.
+
+Podemos utilizá-lo para diversas tarefas durante o desenvolvimento.
+
+---
+
+# 🚀 Criando um projeto
+
+Para criar um novo projeto podemos utilizar:
+
+```bash
+dotnet new console
+```
+
+Esse comando cria a estrutura básica de uma aplicação Console em C#.
+
+Também podemos definir o nome do projeto:
+
+```bash
+dotnet new console -n MeuProjeto
+```
+
+Depois podemos entrar na pasta:
+
+```bash
+cd MeuProjeto
+```
+
+---
+
+# ▶️ Executando um projeto
+
+Um dos comandos mais utilizados:
+
+```bash
+dotnet run
+```
+
+O `dotnet run` compila e executa o projeto atual.
+
+---
+
+# 🔨 Compilando um projeto
+
+Para apenas compilar o projeto:
+
+```bash
+dotnet build
+```
+
+O comando verifica o projeto e gera os arquivos necessários para execução.
+
+---
+
+# 🧪 Executando testes
+
+Para executar os testes automatizados:
+
+```bash
+dotnet test
+```
+
+Esse comando é utilizado principalmente em projetos que possuem testes unitários ou de integração.
+
+---
+
+# 📦 NuGet
+
+O .NET utiliza o **NuGet** como gerenciador de pacotes.
+
+### Adicionar pacote
+
+```bash
+dotnet add package NomeDoPacote
+```
+
+Exemplo:
+
+```bash
+dotnet add package Newtonsoft.Json
+```
+
+### Remover pacote
+
+```bash
+dotnet remove package Newtonsoft.Json
+```
+
+### Listar pacotes instalados
+
+```bash
+dotnet list package
+```
+
+---
+
+# 🔗 Referências entre projetos
+
+Quando temos mais de um projeto dentro de uma solução, podemos adicionar uma referência entre eles:
+
+```bash
+dotnet add reference caminho/Projeto.csproj
+```
+
+Exemplo:
+
+```bash
+dotnet add reference ..\MeuProjeto.Common\MeuProjeto.Common.csproj
+```
+
+Isso permite que um projeto utilize classes e recursos disponíveis em outro projeto.
+
+---
+
+# 🗂️ Solutions
+
+Uma **Solution** permite organizar vários projetos .NET.
+
+### Criar uma Solution
+
+```bash
+dotnet new sln -n MinhaSolucao
+```
+
+### Adicionar um projeto
+
+```bash
+dotnet sln add MeuProjeto/MeuProjeto.csproj
+```
+
+### Listar os projetos
+
+```bash
+dotnet sln list
+```
+
+Exemplo de estrutura:
+
+```text
+MinhaSolucao/
+│
+├── MinhaApi/
+│   └── MinhaApi.csproj
+│
+├── MinhaApi.Domain/
+│   └── MinhaApi.Domain.csproj
+│
+└── MinhaApi.Infrastructure/
+    └── MinhaApi.Infrastructure.csproj
+```
+
+---
+
+# 🧹 Limpando o projeto
+
+Para limpar os arquivos gerados durante a compilação:
+
+```bash
+dotnet clean
+```
+
+Esse comando pode remover arquivos das pastas:
+
+```text
+bin/
+obj/
+```
+
+Pode ser útil quando queremos realizar uma nova compilação limpa.
+
+---
+
+# 📥 Restaurando dependências
+
+Para restaurar as dependências do projeto:
+
+```bash
+dotnet restore
+```
+
+Esse comando baixa e restaura os pacotes necessários definidos no projeto.
+
+Normalmente, comandos como `dotnet build` e `dotnet run` já realizam essa etapa automaticamente quando necessário.
+
+---
+
+# 📤 Publicando uma aplicação
+
+Para preparar uma aplicação para publicação:
+
+```bash
+dotnet publish
+```
+
+Podemos utilizar a configuração `Release`:
+
+```bash
+dotnet publish -c Release
+```
+
+Também podemos definir uma pasta de saída:
+
+```bash
+dotnet publish -c Release -o ./publish
+```
+
+---
+
+# 🔍 Informações do ambiente .NET
+
+### Verificar a versão instalada
+
+```bash
+dotnet --version
+```
+
+### Obter informações detalhadas
+
+```bash
+dotnet --info
+```
+
+### Listar SDKs instalados
+
+```bash
+dotnet --list-sdks
+```
+
+### Listar runtimes instalados
+
+```bash
+dotnet --list-runtimes
+```
+
+---
+
+# 📚 Principais comandos
+
+| Comando | Descrição |
+|---|---|
+| `dotnet --version` | Mostra a versão do SDK |
+| `dotnet --info` | Mostra informações do ambiente .NET |
+| `dotnet new` | Cria um novo projeto |
+| `dotnet new console` | Cria um projeto Console |
+| `dotnet new list` | Lista os templates disponíveis |
+| `dotnet run` | Executa o projeto |
+| `dotnet build` | Compila o projeto |
+| `dotnet test` | Executa os testes |
+| `dotnet restore` | Restaura dependências |
+| `dotnet clean` | Limpa arquivos de compilação |
+| `dotnet add package` | Adiciona um pacote NuGet |
+| `dotnet remove package` | Remove um pacote NuGet |
+| `dotnet list package` | Lista pacotes instalados |
+| `dotnet add reference` | Adiciona referência entre projetos |
+| `dotnet new sln` | Cria uma Solution |
+| `dotnet sln add` | Adiciona projeto à Solution |
+| `dotnet sln list` | Lista projetos da Solution |
+| `dotnet publish` | Prepara o projeto para publicação |
+
+---
+
+# 🔄 Fluxo básico
+
+Um fluxo simples para criar e executar um projeto Console:
+
+```bash
+dotnet new console -n MeuProjeto
+cd MeuProjeto
+dotnet build
+dotnet run
+```
+
+Durante o desenvolvimento:
+
+```bash
+dotnet run
+```
+
+Para adicionar uma biblioteca:
+
+```bash
+dotnet add package NomeDoPacote
+```
+
+Para executar testes:
+
+```bash
+dotnet test
+```
+
+Para publicar:
+
+```bash
+dotnet publish -c Release
+```
+
+---
+
+# 🎯 Resumo
+
+O **.NET CLI** permite controlar praticamente todo o ciclo de desenvolvimento através do terminal.
+
+Com ele podemos:
+
+- Criar projetos;
+- Executar aplicações;
+- Compilar projetos;
+- Gerenciar pacotes;
+- Trabalhar com NuGet;
+- Criar Solutions;
+- Adicionar referências entre projetos;
+- Executar testes;
+- Limpar arquivos de compilação;
+- Restaurar dependências;
+- Publicar aplicações.
+
+> **Em resumo:** o .NET CLI é uma ferramenta fundamental para quem trabalha com C#, principalmente em ambientes profissionais, servidores, automações e pipelines de CI/CD. 

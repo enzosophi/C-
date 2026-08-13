@@ -1,0 +1,15 @@
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\bin\Debug\net10.0\Exceptions.exe
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\bin\Debug\net10.0\Exceptions.deps.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\bin\Debug\net10.0\Exceptions.runtimeconfig.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\bin\Debug\net10.0\Exceptions.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\bin\Debug\net10.0\Exceptions.pdb
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\obj\Debug\net10.0\Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\obj\Debug\net10.0\Exceptions.AssemblyInfoInputs.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\obj\Debug\net10.0\Exceptions.AssemblyInfo.cs
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\obj\Debug\net10.0\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\obj\Debug\net10.0\Exceptions.sourcelink.json
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\obj\Debug\net10.0\Exceptions.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\obj\Debug\net10.0\refint\Exceptions.dll
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\obj\Debug\net10.0\Exceptions.pdb
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\obj\Debug\net10.0\Exceptions.genruntimeconfig.cache
+C:\Users\poenzo\CursosDIO\C#\FundamentoProgramacaoCS\06-EXCEPTIONS\Exceptions\obj\Debug\net10.0\ref\Exceptions.dll
